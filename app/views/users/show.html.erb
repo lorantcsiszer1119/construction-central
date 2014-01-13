@@ -1,0 +1,35 @@
+<div>
+  <%= render(:partial => "layouts/user_sub_menu")%>
+	
+	<h2>Details For: <%= @user.first_name %> </h2>
+	<p>
+		<%= "Authority:" %>
+		<%= @user.authority %>
+	</p>
+	<p>
+		<%= "First Name:" %>
+		<%= @user.first_name %>
+	</p>
+	<p>
+		<%= "Last Name:" %>
+		<%= @user.last_name %>
+	</p>
+	<p>
+		<%= "Primary Phone:" %>
+		<%= @user.primary_phone %>
+	</p>
+	<p>
+		<%= "Email:" %>
+		<%= @user.email %>
+	</p>
+	<p>
+		<%= "Created:" %>
+		<%= @user.created_at %>
+	</p>
+	<p>
+		<%= "Last Updated:" %>
+		<%= @user.updated_at %>
+	</p>
+
+	
+</div>

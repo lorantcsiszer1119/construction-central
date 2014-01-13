@@ -1,0 +1,14 @@
+<div>
+    <%= render(:partial => "layouts/accounting_sub_menu")%>
+    <h1>Purchase Orders</h1>
+    <%= link_to("Instructions >>", {:action => 'show'}) %>
+    <br/>
+    <br/>
+    <div class="instructions">
+        <p>Default paragraph. </p>
+    </div>
+
+    </br>
+    <%= link_to("+ Purchase Order", {:action => 'new_purchase_order'}, :id => 'add-purchase-order', :class => 'action vew btn') %>
+    <%= render(:partial => "purchase_orders", :locals => {:purchase_orders => @purchase_orders}) %>
+</div>

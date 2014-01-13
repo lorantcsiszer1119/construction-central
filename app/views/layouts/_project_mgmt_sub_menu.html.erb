@@ -1,0 +1,11 @@
+<div id='submenu'>
+	<ul>
+		<li><%= link_to("Current Projects", {:controller => 'projects', :action => 'list_current_projects'})%>
+		<li><%= link_to("Past Projects", {:controller => 'projects', :action => 'list_past_projects'})%>
+		<li><%= link_to("Task Lists", {:controller => 'tasklists', :action => 'list'})%>
+		<li><%= link_to("Schedules", {:controller => 'tasklists', :action => 'schedule'})%>
+		<li><%= link_to("Import/Export")%>
+	</ul>
+</div>
+
+	

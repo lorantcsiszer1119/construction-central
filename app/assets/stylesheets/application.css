@@ -1,0 +1,80 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery.ui.all
+ *= require bootstrap_and_overrides
+ *= require_tree ./base
+ *= require gantt_chart/dhtmlxgantt
+ */
+
+ul#tasksContainer{
+    list-style: none;
+    display: inline-block;
+}
+
+ul#tasksContainer li label{
+    padding: 5px;
+}
+
+ul#tasksContainer li label:hover{
+    cursor: pointer;
+    background: gainsboro;
+}
+
+.login-box {
+    border: 1px solid #000000;
+    margin: 30px auto;padding: 25px 67px;
+    width: 250px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.change_order{
+    background-color: lightgoldenrodyellow;
+}
+
+.purchased{
+    background-color: #FFE4E1;
+}
+
+.autocomplete-sublabel{
+    font-style: italic;
+    font-size: 10px;
+}
+
+.inline-table-input{
+    width: 70%;
+}
+
+ul.ui-autocomplete {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: solid 1px #999;
+  cursor: default;
+  li {
+    background-color: #FFF;
+    border-top: solid 1px #DDD;
+    margin: 0;
+    padding: 0;
+    a {
+      color: #000;
+      display: block;
+      padding: 3px;
+    }
+    a.ui-state-hover, a.ui-state-active {
+      background-color: #FFFCB2;
+    }
+  }
+}
